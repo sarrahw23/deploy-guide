@@ -1,0 +1,99 @@
+name: Request a New Framework Guide
+description: Suggest a framework deployment guide that should be covered
+title: "[Framework]: "
+labels: ["new-guide", "framework"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new framework guide! Please fill out the details below so we can prioritize and write it.
+
+  - type: input
+    id: framework-name
+    attributes:
+      label: Framework Name
+      description: The name of the framework
+      placeholder: e.g., Django, SvelteKit, Remix
+    validations:
+      required: true
+
+  - type: input
+    id: framework-url
+    attributes:
+      label: Framework URL
+      description: Link to the framework's website or repository
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Programming Language
+      options:
+        - JavaScript / TypeScript
+        - Python
+        - Go
+        - Rust
+        - Ruby
+        - PHP
+        - Java / Kotlin
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: framework-type
+    attributes:
+      label: Framework Type
+      options:
+        - Frontend (SPA)
+        - Frontend (SSR/SSG)
+        - Backend API
+        - Full-stack
+        - Static site generator
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: recommended-platforms
+    attributes:
+      label: Recommended deployment platforms (select all that apply)
+      options:
+        - label: GitHub Pages
+        - label: Vercel
+        - label: Netlify
+        - label: Render
+        - label: Railway
+        - label: Fly.io
+        - label: AWS
+        - label: DigitalOcean
+        - label: Other (specify below)
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this framework be included?
+      description: What makes this framework popular or worth covering?
+      placeholder: |
+        e.g., SvelteKit is growing fast and deployment can be confusing
+        because of its multiple adapter options.
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Helpful Resources
+      description: Links to docs, deployment guides, or blog posts
+      placeholder: |
+        - Official docs: https://docs.example.com
+        - Deployment guide: https://example.com/deploy
+
+  - type: checkboxes
+    id: willing-to-write
+    attributes:
+      label: Would you be willing to write this guide?
+      description: We welcome contributions! Check this if you'd like to submit a PR.
+      options:
+        - label: I'd like to write this guide myself

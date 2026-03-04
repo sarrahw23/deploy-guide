@@ -1,0 +1,79 @@
+name: Request a New Platform Guide
+description: Suggest a deployment platform that should be covered
+title: "[Platform]: "
+labels: ["new-guide", "platform"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new platform! Please fill out the details below so we can prioritize and write the guide.
+
+  - type: input
+    id: platform-name
+    attributes:
+      label: Platform Name
+      description: The name of the deployment platform
+      placeholder: e.g., Railway, Fly.io, AWS Lambda
+    validations:
+      required: true
+
+  - type: input
+    id: platform-url
+    attributes:
+      label: Platform URL
+      description: Link to the platform's website
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: free-tier
+    attributes:
+      label: Does it have a free tier?
+      options:
+        - "Yes"
+        - "No"
+        - Limited / trial only
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: best-for
+    attributes:
+      label: Best for (select all that apply)
+      options:
+        - label: Static sites / SPAs
+        - label: Backend APIs (Node.js, Python, etc.)
+        - label: Full-stack applications
+        - label: Databases
+        - label: Docker containers
+        - label: Serverless functions
+        - label: Edge computing
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this platform be included?
+      description: What makes this platform useful? Who would benefit from this guide?
+      placeholder: |
+        e.g., Railway has a generous free tier and supports any Dockerfile.
+        It's especially popular with students and indie hackers.
+    validations:
+      required: true
+
+  - type: textarea
+    id: resources
+    attributes:
+      label: Helpful Resources
+      description: Links to docs, tutorials, or blog posts that could help write the guide
+      placeholder: |
+        - Official docs: https://docs.example.com
+        - Getting started: https://example.com/quickstart
+
+  - type: checkboxes
+    id: willing-to-write
+    attributes:
+      label: Would you be willing to write this guide?
+      description: We welcome contributions! Check this if you'd like to submit a PR.
+      options:
+        - label: I'd like to write this guide myself
